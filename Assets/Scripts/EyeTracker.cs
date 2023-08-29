@@ -16,7 +16,6 @@ public class EyeTracker : MonoBehaviour
     //[HideInInspector]
     public Transform leftEye, rightEye, targetSphere;
     public Image testSphere;
-    public Text debugText;
 
     [Tooltip("The device screensize in m")]
     [SerializeField]
@@ -106,7 +105,6 @@ public class EyeTracker : MonoBehaviour
         eyeTrackPoint = new Vector2(Screen.width, Screen.height) / 2f + scaledXYPosition;
         testSphere.rectTransform.position = eyeTrackPoint;
 
-        debugText.text = (xyPosition * 100 + " & " + scaledXYPosition + " & " + testSphere.rectTransform.position);
         Debug.Log(xyPosition + " & " + testSphere.rectTransform.position);
 
 
