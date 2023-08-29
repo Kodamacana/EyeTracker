@@ -176,17 +176,17 @@ public class crosshair : MonoBehaviour
     {
         if (Time.time - lastDetectionTime >= detectionInterval)
         {
-            float NegativeOranX = 960 / left;
+            float NegativeOranX = 110 / left;
         var x = ArEyes_R.transform.localRotation.y * NegativeOranX;
 
-        float NegativeOranY = 536 / bot;
+        float NegativeOranY = 100 / bot;
         var y = -ArEyes_R.transform.localRotation.x * NegativeOranY;
 
 
-        float OranX = 960 / right;
+        float OranX = 110 / right;
         var w = ArEyes_R.transform.localRotation.y * OranX;
 
-        float OranY = 536 / top;
+        float OranY = 100 / top;
         var k = -ArEyes_R.transform.localRotation.x * OranY;
 
         //orta
@@ -200,13 +200,13 @@ public class crosshair : MonoBehaviour
                 if (-ArEyes_R.transform.localRotation.x <= RightLeftHalfTop && -ArEyes_R.transform.localRotation.x >= MiddleY)
                 {
                     Debug.Log("orta Sol Üst");
-                    NegativeOranX = 480 / LeftTop;
+                    NegativeOranX = 55 / LeftTop;
                     x = ArEyes_R.transform.localRotation.y * NegativeOranX;
 
-                    NegativeOranY = 255 / LeftTopHalf;
+                    NegativeOranY = 50 / LeftTopHalf;
                     y = ArEyes_R.transform.localRotation.x * NegativeOranY;
-                    x = Mathf.Clamp(x, 0, 480);
-                    y = Mathf.Clamp(y, 0, 255);
+                    x = Mathf.Clamp(x, 0, 55);
+                    y = Mathf.Clamp(y, 0, 50);
                     if (Mathf.Abs(x - transform.localPosition.x) > movementThreshold || Mathf.Abs(y - transform.localPosition.y) > movementThreshold || Time.time - lastDetectionTime >= detectionInterval)
                     {
 
@@ -220,13 +220,13 @@ public class crosshair : MonoBehaviour
                 else if (-ArEyes_R.transform.localRotation.x >= RightLeftHalfBot && -ArEyes_R.transform.localRotation.x <= MiddleY)
                 {
                     Debug.Log("orta sol alt");
-                    NegativeOranX = 480 / LeftTop;
+                    NegativeOranX = 55 / LeftTop;
                     x = ArEyes_R.transform.localRotation.y * NegativeOranX;
 
-                    NegativeOranY = 255 / LeftTopHalf;
+                    NegativeOranY = 50 / LeftTopHalf;
                     y = ArEyes_R.transform.localRotation.x * NegativeOranY;
-                    x = Mathf.Clamp(x, 0, 480);
-                    y = Mathf.Clamp(y, 0, 255);
+                    x = Mathf.Clamp(x, 0, 55);
+                    y = Mathf.Clamp(y, 0, 50);
                     if (Mathf.Abs(x - transform.localPosition.x) > movementThreshold || Mathf.Abs(y - transform.localPosition.y) > movementThreshold || Time.time - lastDetectionTime >= detectionInterval)
                     {
 
@@ -245,13 +245,13 @@ public class crosshair : MonoBehaviour
                 if (-ArEyes_R.transform.localRotation.x <= RightLeftHalfTop && -ArEyes_R.transform.localRotation.x >= MiddleY)
                 {
                     Debug.Log("orta sağ üst");
-                    NegativeOranX = 480 / LeftTop;
+                    NegativeOranX = 55 / LeftTop;
                     x = ArEyes_R.transform.localRotation.y * NegativeOranX;
 
-                    NegativeOranY = 255 / LeftTopHalf;
+                    NegativeOranY = 50 / LeftTopHalf;
                     y = ArEyes_R.transform.localRotation.x * NegativeOranY;
-                    x = Mathf.Clamp(x, 0, 480);
-                    y = Mathf.Clamp(y, 0, 255);
+                    x = Mathf.Clamp(x, 0, 55);
+                    y = Mathf.Clamp(y, 0, 50);
                     if (Mathf.Abs(x - transform.localPosition.x) > movementThreshold || Mathf.Abs(y - transform.localPosition.y) > movementThreshold || Time.time - lastDetectionTime >= detectionInterval)
                     {
 
@@ -265,13 +265,13 @@ public class crosshair : MonoBehaviour
                 else if (-ArEyes_R.transform.localRotation.x >= RightLeftHalfBot && -ArEyes_R.transform.localRotation.x <= MiddleY)
                 {
                     Debug.Log("orta sağ alt");
-                    NegativeOranX = 480 / LeftTop;
+                    NegativeOranX = 55 / LeftTop;
                     x = ArEyes_R.transform.localRotation.y * NegativeOranX;
 
-                    NegativeOranY = 255 / LeftTopHalf;
+                    NegativeOranY = 50 / LeftTopHalf;
                     y = ArEyes_R.transform.localRotation.x * NegativeOranY;
-                    x = Mathf.Clamp(x, 0, 480);
-                    y = Mathf.Clamp(y, 0, 255);
+                    x = Mathf.Clamp(x, 0, 55);
+                    y = Mathf.Clamp(y, 0, 50);
                     if (Mathf.Abs(x - transform.localPosition.x) > movementThreshold || Mathf.Abs(y - transform.localPosition.y) > movementThreshold || Time.time - lastDetectionTime >= detectionInterval)
                     {
 
@@ -296,13 +296,13 @@ public class crosshair : MonoBehaviour
             if (-ArEyes_R.transform.localRotation.x >= MiddleY)
             {
                 Debug.Log("solAlt");
-                NegativeOranX = 960 / LeftBot;
+                NegativeOranX = 110 / LeftBot;
                 x = ArEyes_R.transform.localRotation.y * NegativeOranX;
 
-                NegativeOranY = 536 / LeftBotHalf;
+                NegativeOranY = 100 / LeftBotHalf;
                 y = ArEyes_R.transform.localRotation.x * NegativeOranY;
-                x = Mathf.Clamp(x, 0, 960);
-                y = Mathf.Clamp(y, 0, 536);
+                x = Mathf.Clamp(x, 0, 110);
+                y = Mathf.Clamp(y, 0, 100);
                 if (Mathf.Abs(x - transform.localPosition.x) > movementThreshold || Mathf.Abs(y - transform.localPosition.y) > movementThreshold || Time.time - lastDetectionTime >= detectionInterval)
                 {
 
@@ -316,13 +316,13 @@ public class crosshair : MonoBehaviour
             else
             {
                 Debug.Log("solÜst");
-                NegativeOranX = 960 / LeftTop;
+                NegativeOranX = 110 / LeftTop;
                 x = ArEyes_R.transform.localRotation.y * NegativeOranX;
 
-                NegativeOranY = 536 / LeftTopHalf;
+                NegativeOranY = 100 / LeftTopHalf;
                 y = ArEyes_R.transform.localRotation.x * NegativeOranY;
-                x = Mathf.Clamp(x, 0, 960);
-                y = Mathf.Clamp(y, 0, 536);
+                x = Mathf.Clamp(x, 0, 110);
+                y = Mathf.Clamp(y, 0, 100);
                 if (Mathf.Abs(x - transform.localPosition.x) > movementThreshold || Mathf.Abs(y - transform.localPosition.y) > movementThreshold || Time.time - lastDetectionTime >= detectionInterval)
                 {
 
@@ -342,13 +342,13 @@ public class crosshair : MonoBehaviour
             if (-ArEyes_R.transform.localRotation.x >= MiddleY)
             {
                 Debug.Log("SağAlt");
-                NegativeOranX = 960 / RightBot;
+                NegativeOranX = 110 / RightBot;
                 x = ArEyes_R.transform.localRotation.y * NegativeOranX;
 
-                NegativeOranY = 536 / RightBotHalf;
+                NegativeOranY = 100 / RightBotHalf;
                 y = ArEyes_R.transform.localRotation.x * NegativeOranY;
-                x = Mathf.Clamp(x, 0, 960);
-                y = Mathf.Clamp(y, 0, 536);
+                x = Mathf.Clamp(x, 0, 110);
+                y = Mathf.Clamp(y, 0, 100);
                 if (Mathf.Abs(x - transform.localPosition.x) > movementThreshold || Mathf.Abs(y - transform.localPosition.y) > movementThreshold || Time.time - lastDetectionTime >= detectionInterval)
                 {
 
@@ -362,13 +362,13 @@ public class crosshair : MonoBehaviour
             else
             {
                 Debug.Log("SağÜst");
-                NegativeOranX = 960 / RightTop;
+                NegativeOranX = 110 / RightTop;
                 x = ArEyes_R.transform.localRotation.y * NegativeOranX;
 
-                NegativeOranY = 536 / RightTopHalf;
+                NegativeOranY = 100 / RightTopHalf;
                 y = ArEyes_R.transform.localRotation.x * NegativeOranY;
-                x = Mathf.Clamp(x, 0, 960);
-                y = Mathf.Clamp(y, 0, 536);
+                x = Mathf.Clamp(x, 0, 110);
+                y = Mathf.Clamp(y, 0, 100);
 
                 if (Mathf.Abs(x - transform.localPosition.x) > movementThreshold || Mathf.Abs(y - transform.localPosition.y) > movementThreshold || Time.time - lastDetectionTime >= detectionInterval)
                 {
