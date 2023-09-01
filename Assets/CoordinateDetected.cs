@@ -14,8 +14,6 @@ public class CoordinateDetected : MonoBehaviour
             // Dünya koordinatlarını ekran görünüm yüzdesine dönüştür
             Vector3 viewportPosition = mainCamera.WorldToViewportPoint(worldPosition);
 
-            // Görünüm yüzdesini yazdır
-            Debug.Log("3D Objecin Görünüm Yüzdesi: " + viewportPosition);
         }
         else
         {
